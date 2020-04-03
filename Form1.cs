@@ -17,6 +17,7 @@ namespace CRM_Project
             InitializeComponent();
         }
 
+        //btnMinimize
         private void btnMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
@@ -34,6 +35,26 @@ namespace CRM_Project
             Object rm = Properties.Resources.ResourceManager.GetObject("minimize");
             Bitmap icon = (Bitmap)rm;
             btnMinimize.Image = icon;
+        }
+
+        //btnClose
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnClose_MouseHover(object sender, EventArgs e)
+        {
+            Object rm = Properties.Resources.ResourceManager.GetObject("close-hover");
+            Bitmap icon = (Bitmap)rm;
+            btnClose.Image = icon;
+        }
+
+        private void btnClose_MouseLeave(object sender, EventArgs e)
+        {
+            Object rm = Properties.Resources.ResourceManager.GetObject("close");
+            Bitmap icon = (Bitmap)rm;
+            btnClose.Image = icon;
         }
     }
 }
