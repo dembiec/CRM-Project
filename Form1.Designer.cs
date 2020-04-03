@@ -99,6 +99,9 @@
             this.btnMinimize.Size = new System.Drawing.Size(16, 60);
             this.btnMinimize.TabIndex = 1;
             this.btnMinimize.UseVisualStyleBackColor = true;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
+            this.btnMinimize.MouseLeave += new System.EventHandler(this.btnMinimize_MouseLeave);
+            this.btnMinimize.MouseHover += new System.EventHandler(this.btnMinimize_MouseHover);
             // 
             // btnHome
             // 
