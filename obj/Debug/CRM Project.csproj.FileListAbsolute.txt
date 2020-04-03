@@ -1,0 +1,10 @@
+C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\bin\Debug\CRM Project.exe.config
+C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\bin\Debug\CRM Project.exe
+C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\bin\Debug\CRM Project.pdb
+C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\obj\Debug\CRM Project.csprojAssemblyReference.cache
+C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\obj\Debug\CRM_Project.Properties.Resources.resources
+C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\obj\Debug\CRM Project.csproj.GenerateResource.cache
+C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\obj\Debug\CRM Project.csproj.CoreCompileInputs.cache
+C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\obj\Debug\CRM Project.exe
+C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\obj\Debug\CRM Project.pdb
+C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\obj\Debug\CRM_Project.MainForm.resources
