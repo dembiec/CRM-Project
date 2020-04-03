@@ -17,6 +17,23 @@ namespace CRM_Project
             InitializeComponent();
         }
 
+        //topPanel
+        private void topPanel_MouseDown(object sender, MouseEventArgs e)
+        {
+            lastPoint = new Point(e.X, e.Y);
+        }
+
+        Point lastPoint;
+
+        private void topPanel_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                this.Left += e.X - lastPoint.X;
+                this.Top += e.Y - lastPoint.Y;
+            }
+        }
+
         //btnMinimize
         private void btnMinimize_Click(object sender, EventArgs e)
         {
