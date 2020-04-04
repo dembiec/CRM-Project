@@ -66,5 +66,21 @@ namespace CRM_Project
         {
             AppIcons.replace(btnClose, "close");
         }
+
+        //btnHome
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHome_MouseHover(object sender, EventArgs e)
+        {
+            AppIcons.replace(btnHome, "home-hover");
+        }
+
+        private void btnHome_MouseLeave(object sender, EventArgs e)
+        {
+            AppIcons.replace(btnHome, "home");
+        }
     }
 }
