@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.leftPanel = new System.Windows.Forms.Panel();
-            this.btnHome = new System.Windows.Forms.Button();
-            this.btnGithub = new System.Windows.Forms.Button();
             this.topPanel = new System.Windows.Forms.Panel();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.btnMinimize = new System.Windows.Forms.Button();
             this.lblAppName = new System.Windows.Forms.Label();
             this.contentPanel = new System.Windows.Forms.Panel();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnMinimize = new System.Windows.Forms.Button();
+            this.btnHome = new System.Windows.Forms.Button();
+            this.btnGithub = new System.Windows.Forms.Button();
             this.leftPanel.SuspendLayout();
             this.topPanel.SuspendLayout();
             this.SuspendLayout();
@@ -47,40 +47,11 @@
             this.leftPanel.Controls.Add(this.btnHome);
             this.leftPanel.Controls.Add(this.btnGithub);
             this.leftPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.leftPanel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.leftPanel.Location = new System.Drawing.Point(0, 0);
             this.leftPanel.Name = "leftPanel";
             this.leftPanel.Size = new System.Drawing.Size(100, 561);
             this.leftPanel.TabIndex = 0;
-            // 
-            // btnHome
-            // 
-            this.btnHome.FlatAppearance.BorderSize = 0;
-            this.btnHome.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnHome.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Image = global::CRM_Project.Properties.Resources.home;
-            this.btnHome.Location = new System.Drawing.Point(0, 120);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(100, 32);
-            this.btnHome.TabIndex = 1;
-            this.btnHome.UseVisualStyleBackColor = true;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            this.btnHome.MouseLeave += new System.EventHandler(this.btnHome_MouseLeave);
-            this.btnHome.MouseHover += new System.EventHandler(this.btnHome_MouseHover);
-            // 
-            // btnGithub
-            // 
-            this.btnGithub.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGithub.FlatAppearance.BorderSize = 0;
-            this.btnGithub.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnGithub.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnGithub.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGithub.Image = global::CRM_Project.Properties.Resources.github;
-            this.btnGithub.Location = new System.Drawing.Point(0, 20);
-            this.btnGithub.Name = "btnGithub";
-            this.btnGithub.Size = new System.Drawing.Size(100, 45);
-            this.btnGithub.TabIndex = 0;
-            this.btnGithub.UseVisualStyleBackColor = true;
             // 
             // topPanel
             // 
@@ -95,6 +66,25 @@
             this.topPanel.TabIndex = 1;
             this.topPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.topPanel_MouseDown);
             this.topPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.topPanel_MouseMove);
+            // 
+            // lblAppName
+            // 
+            this.lblAppName.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblAppName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(242)))), ((int)(((byte)(251)))));
+            this.lblAppName.Location = new System.Drawing.Point(20, 0);
+            this.lblAppName.Name = "lblAppName";
+            this.lblAppName.Size = new System.Drawing.Size(117, 60);
+            this.lblAppName.TabIndex = 0;
+            this.lblAppName.Text = "CRM Project";
+            this.lblAppName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // contentPanel
+            // 
+            this.contentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.contentPanel.Location = new System.Drawing.Point(100, 60);
+            this.contentPanel.Name = "contentPanel";
+            this.contentPanel.Size = new System.Drawing.Size(884, 501);
+            this.contentPanel.TabIndex = 2;
             // 
             // btnClose
             // 
@@ -128,24 +118,35 @@
             this.btnMinimize.MouseLeave += new System.EventHandler(this.btnMinimize_MouseLeave);
             this.btnMinimize.MouseHover += new System.EventHandler(this.btnMinimize_MouseHover);
             // 
-            // lblAppName
+            // btnHome
             // 
-            this.lblAppName.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblAppName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(242)))), ((int)(((byte)(251)))));
-            this.lblAppName.Location = new System.Drawing.Point(20, 0);
-            this.lblAppName.Name = "lblAppName";
-            this.lblAppName.Size = new System.Drawing.Size(117, 60);
-            this.lblAppName.TabIndex = 0;
-            this.lblAppName.Text = "CRM Project";
-            this.lblAppName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnHome.FlatAppearance.BorderSize = 0;
+            this.btnHome.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnHome.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHome.Image = global::CRM_Project.Properties.Resources.home;
+            this.btnHome.Location = new System.Drawing.Point(0, 120);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(100, 32);
+            this.btnHome.TabIndex = 1;
+            this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            this.btnHome.MouseLeave += new System.EventHandler(this.btnHome_MouseLeave);
+            this.btnHome.MouseHover += new System.EventHandler(this.btnHome_MouseHover);
             // 
-            // contentPanel
+            // btnGithub
             // 
-            this.contentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.contentPanel.Location = new System.Drawing.Point(100, 60);
-            this.contentPanel.Name = "contentPanel";
-            this.contentPanel.Size = new System.Drawing.Size(884, 501);
-            this.contentPanel.TabIndex = 2;
+            this.btnGithub.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGithub.FlatAppearance.BorderSize = 0;
+            this.btnGithub.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnGithub.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnGithub.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGithub.Image = global::CRM_Project.Properties.Resources.github;
+            this.btnGithub.Location = new System.Drawing.Point(0, 20);
+            this.btnGithub.Name = "btnGithub";
+            this.btnGithub.Size = new System.Drawing.Size(100, 45);
+            this.btnGithub.TabIndex = 0;
+            this.btnGithub.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -163,6 +164,7 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CRM Project";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.leftPanel.ResumeLayout(false);
             this.topPanel.ResumeLayout(false);
             this.ResumeLayout(false);
