@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CRM_Project.Src.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -42,16 +43,12 @@ namespace CRM_Project
 
         private void btnMinimize_MouseHover(object sender, EventArgs e)
         {
-            Object rm = Properties.Resources.ResourceManager.GetObject("minimize-hover");
-            Bitmap icon = (Bitmap)rm;
-            btnMinimize.Image = icon;
+            AppIcons.replace(btnMinimize, "minimize-hover");
         }
 
         private void btnMinimize_MouseLeave(object sender, EventArgs e)
         {
-            Object rm = Properties.Resources.ResourceManager.GetObject("minimize");
-            Bitmap icon = (Bitmap)rm;
-            btnMinimize.Image = icon;
+            AppIcons.replace(btnMinimize, "minimize");
         }
 
         //btnClose
@@ -62,16 +59,12 @@ namespace CRM_Project
 
         private void btnClose_MouseHover(object sender, EventArgs e)
         {
-            Object rm = Properties.Resources.ResourceManager.GetObject("close-hover");
-            Bitmap icon = (Bitmap)rm;
-            btnClose.Image = icon;
+            AppIcons.replace(btnClose, "close-hover");
         }
 
         private void btnClose_MouseLeave(object sender, EventArgs e)
         {
-            Object rm = Properties.Resources.ResourceManager.GetObject("close");
-            Bitmap icon = (Bitmap)rm;
-            btnClose.Image = icon;
+            AppIcons.replace(btnClose, "close");
         }
     }
 }
