@@ -57,6 +57,12 @@
     <Compile Include="Src\Classes\AppIcons.cs" />
     <Compile Include="Src\Classes\Network.cs" />
     <Compile Include="Src\Classes\UserControls.cs" />
+    <Compile Include="Src\Controls\UcNetwork.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Src\Controls\UcNetwork.Designer.cs">
+      <DependentUpon>UcNetwork.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -70,6 +76,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Src\Controls\UcNetwork.resx">
+      <DependentUpon>UcNetwork.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -157,6 +157,7 @@
             this.Controls.Add(this.topPanel);
             this.Controls.Add(this.leftPanel);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(242)))), ((int)(((byte)(251)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
