@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.btnAddCustomer = new System.Windows.Forms.Button();
+            this.contentPanel = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // btnAddCustomer
@@ -47,12 +48,21 @@
             this.btnAddCustomer.TabIndex = 0;
             this.btnAddCustomer.Text = " Dodaj Klienta";
             this.btnAddCustomer.UseVisualStyleBackColor = true;
+            this.btnAddCustomer.Click += new System.EventHandler(this.btnAddCustomer_Click);
+            // 
+            // contentPanel
+            // 
+            this.contentPanel.Location = new System.Drawing.Point(0, 50);
+            this.contentPanel.Name = "contentPanel";
+            this.contentPanel.Size = new System.Drawing.Size(884, 450);
+            this.contentPanel.TabIndex = 1;
             // 
             // UcCustomers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
+            this.Controls.Add(this.contentPanel);
             this.Controls.Add(this.btnAddCustomer);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "UcCustomers";
@@ -64,5 +74,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnAddCustomer;
+        private System.Windows.Forms.Panel contentPanel;
     }
 }

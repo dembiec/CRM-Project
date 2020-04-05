@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CRM_Project.Src.Classes;
 
 namespace CRM_Project.Src.Controls
 {
@@ -15,6 +16,12 @@ namespace CRM_Project.Src.Controls
         public UcCustomers()
         {
             InitializeComponent();
+        }
+
+        private void btnAddCustomer_Click(object sender, EventArgs e)
+        {
+            UcAddCustomer UcAC = new UcAddCustomer();
+            UserControls.show(UcAC, contentPanel);
         }
     }
 }
