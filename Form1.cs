@@ -104,7 +104,8 @@ namespace CRM_Project
         //btnCustomers
         private void btnCustomers_Click(object sender, EventArgs e)
         {
-
+            UcCustomers UcC = new UcCustomers();
+            UserControls.show(UcC, contentPanel);
         }
 
         private void btnCustomers_MouseHover(object sender, EventArgs e)
