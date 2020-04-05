@@ -87,7 +87,8 @@ namespace CRM_Project
         //btnHome
         private void btnHome_Click(object sender, EventArgs e)
         {
-
+            UcHome UcH = new UcHome();
+            UserControls.show(UcH, contentPanel);
         }
 
         private void btnHome_MouseHover(object sender, EventArgs e)
