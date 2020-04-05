@@ -35,6 +35,7 @@
             this.contentPanel = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnMinimize = new System.Windows.Forms.Button();
+            this.btnCustomers = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.btnGithub = new System.Windows.Forms.Button();
             this.leftPanel.SuspendLayout();
@@ -44,6 +45,7 @@
             // leftPanel
             // 
             this.leftPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(28)))), ((int)(((byte)(40)))));
+            this.leftPanel.Controls.Add(this.btnCustomers);
             this.leftPanel.Controls.Add(this.btnHome);
             this.leftPanel.Controls.Add(this.btnGithub);
             this.leftPanel.Dock = System.Windows.Forms.DockStyle.Left;
@@ -118,6 +120,22 @@
             this.btnMinimize.MouseLeave += new System.EventHandler(this.btnMinimize_MouseLeave);
             this.btnMinimize.MouseHover += new System.EventHandler(this.btnMinimize_MouseHover);
             // 
+            // btnCustomers
+            // 
+            this.btnCustomers.FlatAppearance.BorderSize = 0;
+            this.btnCustomers.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnCustomers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnCustomers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCustomers.Image = global::CRM_Project.Properties.Resources.customers;
+            this.btnCustomers.Location = new System.Drawing.Point(0, 180);
+            this.btnCustomers.Name = "btnCustomers";
+            this.btnCustomers.Size = new System.Drawing.Size(100, 32);
+            this.btnCustomers.TabIndex = 2;
+            this.btnCustomers.UseVisualStyleBackColor = true;
+            this.btnCustomers.Click += new System.EventHandler(this.btnCustomers_Click);
+            this.btnCustomers.MouseLeave += new System.EventHandler(this.btnCustomers_MouseLeave);
+            this.btnCustomers.MouseHover += new System.EventHandler(this.btnCustomers_MouseHover);
+            // 
             // btnHome
             // 
             this.btnHome.FlatAppearance.BorderSize = 0;
@@ -181,6 +199,7 @@
         private System.Windows.Forms.Button btnMinimize;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Panel contentPanel;
+        private System.Windows.Forms.Button btnCustomers;
     }
 }
 
