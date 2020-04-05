@@ -10,3 +10,4 @@ C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\obj\Debug\CRM Project.pdb
 C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\obj\Debug\CRM_Project.MainForm.resources
 C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\obj\Debug\CRM_Project.Src.Controls.UcNetwork.resources
 C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\obj\Debug\CRM_Project.Src.Controls.UcHome.resources
+C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\obj\Debug\CRM_Project.Src.Controls.UcCustomers.resources

@@ -57,6 +57,12 @@
     <Compile Include="Src\Classes\AppIcons.cs" />
     <Compile Include="Src\Classes\Network.cs" />
     <Compile Include="Src\Classes\UserControls.cs" />
+    <Compile Include="Src\Controls\UcCustomers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Src\Controls\UcCustomers.Designer.cs">
+      <DependentUpon>UcCustomers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Src\Controls\UcHome.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -82,6 +88,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Src\Controls\UcCustomers.resx">
+      <DependentUpon>UcCustomers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Src\Controls\UcHome.resx">
       <DependentUpon>UcHome.cs</DependentUpon>
     </EmbeddedResource>
