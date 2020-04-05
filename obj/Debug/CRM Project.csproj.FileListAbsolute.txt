@@ -11,3 +11,10 @@ C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\obj\Debug\CRM_Project.MainFor
 C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\obj\Debug\CRM_Project.Src.Controls.UcNetwork.resources
 C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\obj\Debug\CRM_Project.Src.Controls.UcHome.resources
 C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\obj\Debug\CRM_Project.Src.Controls.UcCustomers.resources
+C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\bin\Debug\MySql.Data.dll
+C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\bin\Debug\Google.Protobuf.dll
+C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\bin\Debug\Renci.SshNet.dll
+C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\bin\Debug\MySql.Data.xml
+C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\obj\Debug\CRM Project.csproj.CopyComplete
