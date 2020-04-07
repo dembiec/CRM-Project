@@ -37,9 +37,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.tbName = new System.Windows.Forms.TextBox();
+            this.pbName = new System.Windows.Forms.PictureBox();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnInsert = new System.Windows.Forms.Button();
-            this.tbName = new System.Windows.Forms.TextBox();
+            this.pbEmail = new System.Windows.Forms.PictureBox();
+            this.pbTelephone = new System.Windows.Forms.PictureBox();
+            this.pbAdress = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbEmail)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbTelephone)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAdress)).BeginInit();
             this.SuspendLayout();
             // 
             // tbEmail
@@ -151,6 +159,29 @@
             this.label3.TabIndex = 10;
             this.label3.Text = "Dodatkowe Informacje (opcjonalne)";
             // 
+            // tbName
+            // 
+            this.tbName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(242)))), ((int)(((byte)(251)))));
+            this.tbName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbName.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tbName.ForeColor = System.Drawing.Color.Black;
+            this.tbName.Location = new System.Drawing.Point(20, 60);
+            this.tbName.MaxLength = 50;
+            this.tbName.Name = "tbName";
+            this.tbName.Size = new System.Drawing.Size(400, 26);
+            this.tbName.TabIndex = 12;
+            this.tbName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbName_KeyPress);
+            this.tbName.Validated += new System.EventHandler(this.tbName_Validated);
+            // 
+            // pbName
+            // 
+            this.pbName.Location = new System.Drawing.Point(400, 35);
+            this.pbName.Name = "pbName";
+            this.pbName.Size = new System.Drawing.Size(16, 16);
+            this.pbName.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbName.TabIndex = 13;
+            this.pbName.TabStop = false;
+            // 
             // btnClear
             // 
             this.btnClear.FlatAppearance.BorderSize = 0;
@@ -185,25 +216,42 @@
             this.btnInsert.UseVisualStyleBackColor = true;
             this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
-            // tbName
+            // pbEmail
             // 
-            this.tbName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(242)))), ((int)(((byte)(251)))));
-            this.tbName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbName.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tbName.ForeColor = System.Drawing.Color.Black;
-            this.tbName.Location = new System.Drawing.Point(20, 60);
-            this.tbName.MaxLength = 50;
-            this.tbName.Name = "tbName";
-            this.tbName.Size = new System.Drawing.Size(400, 26);
-            this.tbName.TabIndex = 12;
-            this.tbName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbName_KeyPress);
-            this.tbName.Validated += new System.EventHandler(this.tbName_Validated);
+            this.pbEmail.Location = new System.Drawing.Point(844, 35);
+            this.pbEmail.Name = "pbEmail";
+            this.pbEmail.Size = new System.Drawing.Size(16, 16);
+            this.pbEmail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbEmail.TabIndex = 14;
+            this.pbEmail.TabStop = false;
+            // 
+            // pbTelephone
+            // 
+            this.pbTelephone.Location = new System.Drawing.Point(400, 105);
+            this.pbTelephone.Name = "pbTelephone";
+            this.pbTelephone.Size = new System.Drawing.Size(16, 16);
+            this.pbTelephone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbTelephone.TabIndex = 15;
+            this.pbTelephone.TabStop = false;
+            // 
+            // pbAdress
+            // 
+            this.pbAdress.Location = new System.Drawing.Point(844, 105);
+            this.pbAdress.Name = "pbAdress";
+            this.pbAdress.Size = new System.Drawing.Size(16, 16);
+            this.pbAdress.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbAdress.TabIndex = 16;
+            this.pbAdress.TabStop = false;
             // 
             // UcAddCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
+            this.Controls.Add(this.pbAdress);
+            this.Controls.Add(this.pbTelephone);
+            this.Controls.Add(this.pbEmail);
+            this.Controls.Add(this.pbName);
             this.Controls.Add(this.tbName);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.label3);
@@ -218,6 +266,10 @@
             this.Controls.Add(this.tbEmail);
             this.Name = "UcAddCustomer";
             this.Size = new System.Drawing.Size(884, 450);
+            ((System.ComponentModel.ISupportInitialize)(this.pbName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbEmail)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbTelephone)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAdress)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -236,5 +288,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.TextBox tbName;
+        private System.Windows.Forms.PictureBox pbName;
+        private System.Windows.Forms.PictureBox pbEmail;
+        private System.Windows.Forms.PictureBox pbTelephone;
+        private System.Windows.Forms.PictureBox pbAdress;
     }
 }

@@ -121,8 +121,14 @@
   <data name="minimize-hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\minimize-hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="sm-btn-pink" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sm-btn-pink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="close-hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\close-hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="customers-hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\customers-hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="home" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,13 +151,13 @@
   <data name="home-hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home-hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="customers-hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\customers-hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="sm-btn-green" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sm-btn-green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sm-btn-pink" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sm-btn-pink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="check" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\check.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="not-accept" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\not-accept.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

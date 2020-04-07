@@ -29,28 +29,32 @@ namespace CRM_Project.Src.Controls
             }
         }
 
-        bool name;
+        bool name = false;
 
         private void tbName_Validated(object sender, EventArgs e)
         {
             if (tbName.Text == "") {
                 name = false;
+                pbName.Image = Properties.Resources.not_accept;
             } else {
                 name = true;
+                pbName.Image = Properties.Resources.check;
             }
         }
 
         //email
 
-        bool email;
+        bool email = false;
         private void tbEmail_Validated(object sender, EventArgs e)
         {
             try {
                 MailAddress mail = new MailAddress(tbEmail.Text);
                 email = true;
+                pbEmail.Image = Properties.Resources.check;
             }
             catch {
                 email = false;
+                pbEmail.Image = Properties.Resources.not_accept;
             }
         }
 
@@ -64,36 +68,44 @@ namespace CRM_Project.Src.Controls
             }
         }
 
-        bool telephone;
+        bool telephone = false;
 
         private void tbTelephone_Validated(object sender, EventArgs e)
         {
-            if (tbTelephone.Text == "") {
+            if (tbTelephone.Text == "" || tbTelephone.TextLength != 9) {
                 telephone = false;
+                pbTelephone.Image = Properties.Resources.not_accept;
             } else {
                 telephone = true;
+                pbTelephone.Image = Properties.Resources.check;
             }
         }
 
         //adress
 
-        bool adress;
+        bool adress = false;
 
         private void tbAdress_Validated(object sender, EventArgs e)
         {
             if (tbAdress.Text == "") {
                 adress = false;
+                pbAdress.Image = Properties.Resources.not_accept;
             } else {
                 adress = true;
+                pbAdress.Image = Properties.Resources.check;
             }
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
             tbName.Text = "";
+            pbName.Image = null;
             tbEmail.Text = "";
+            pbEmail.Image = null;
             tbTelephone.Text = "";
+            pbTelephone.Image = null;
             tbAdress.Text = "";
+            pbAdress.Image = null;
             tbDescription.Text = "";
         }
 
