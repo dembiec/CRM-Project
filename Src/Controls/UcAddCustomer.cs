@@ -112,11 +112,21 @@ namespace CRM_Project.Src.Controls
         private void btnInsert_Click(object sender, EventArgs e)
         {
             if (name && email && telephone && adress) {
+                string dbQuery;
                 if (tbDescription.Text == "") {
-                    Database.manipulation("INSERT INTO `customers` (`id`, `name`, `email`, `telephone`, `address`, `description`) VALUES (NULL, '" + tbName.Text + "', '" + tbEmail.Text + "', '" + tbTelephone.Text + "', '" + tbAdress.Text + "', NULL)");
+                    dbQuery = "INSERT INTO `customers` (`id`, `name`, `email`, `telephone`, `address`, `description`) VALUES (NULL, '" + tbName.Text + "', '" + tbEmail.Text + "', '" + tbTelephone.Text + "', '" + tbAdress.Text + "', NULL)";
                 } else {
-                    Database.manipulation("INSERT INTO `customers` (`id`, `name`, `email`, `telephone`, `address`, `description`) VALUES (NULL, '" + tbName.Text + "', '" + tbEmail.Text + "', '" + tbTelephone.Text + "', '" + tbAdress.Text + "', '" + tbDescription.Text + "')");
+                    dbQuery = "INSERT INTO `customers` (`id`, `name`, `email`, `telephone`, `address`, `description`) VALUES (NULL, '" + tbName.Text + "', '" + tbEmail.Text + "', '" + tbTelephone.Text + "', '" + tbAdress.Text + "', '" + tbDescription.Text + "')";
                 }
+
+                Database.connect();
+                Database.query(dbQuery);
+                if (Database.status) {
+                    MessageBox.Show("Poprawnie dodano klienta do bazy danych");
+                } else {
+                    MessageBox.Show("Wystąpił błąd bazy danych. Spróbuj ponownie za chwilę");
+                }
+                Database.close();
             } else {
                 MessageBox.Show("Sprawdź Wszystkie Pola");
             }
