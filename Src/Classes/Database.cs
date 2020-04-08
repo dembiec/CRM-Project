@@ -10,31 +10,40 @@ namespace CRM_Project.Src.Classes
 {
     class Database
     {
-        public static void manipulation(string queryContent)
+        public static MySqlConnection databaseConnection;
+        public static MySqlDataReader reader;
+        public static bool status = true;
+
+        public static void connect()
         {
             string host = "localhost";
-            string dbUser = "root";
-            string dbPassword = "";
-            string dbName = "crm-project";
+            string user = "root";
+            string password = "";
+            string db = "crm-project";
 
-            string connectionData = "datasource=" + host + ";port=3306;username=" + dbUser + ";password=" + dbPassword + ";database=" + dbName + ";";
-            string query = queryContent;
+            string connectionData = "datasource=" + host + ";port=3306;username=" + user + ";password=" + password + ";database=" + db + ";";
+            databaseConnection = new MySqlConnection(connectionData);
+        }
 
-            MySqlConnection databaseConnection = new MySqlConnection(connectionData);
-            MySqlCommand commandDatabase = new MySqlCommand(query, databaseConnection);
+        public static void query(string dbQuery)
+        {
+            MySqlCommand commandDatabase = new MySqlCommand(dbQuery, databaseConnection);
             commandDatabase.CommandTimeout = 60;
 
             try
             {
                 databaseConnection.Open();
-                MySqlDataReader myReader = commandDatabase.ExecuteReader();
-                MessageBox.Show("Poprawnie wykonano zapytanie do bazy danych");
-                databaseConnection.Close();
+                reader = commandDatabase.ExecuteReader();
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                MessageBox.Show("Wystąpił błąd bazy danych");
+                status = false;
             }
+        }
+
+        public static void close()
+        {
+            databaseConnection.Close();
         }
     }
 }
