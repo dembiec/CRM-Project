@@ -60,7 +60,9 @@ namespace CRM_Project.Src.Controls
                     tblCustomers.Controls.Add(lblNoData);
                 }
             } else {
-                MessageBox.Show("Wystąpił błąd bazy danych podczas wykonywania zapytania"); 
+                contentPanel.Dock = DockStyle.Fill;
+                UcDbError UcDE = new UcDbError();
+                UserControls.show(UcDE, contentPanel);
             }
             Database.close();
         }
