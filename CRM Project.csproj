@@ -71,6 +71,12 @@
     <Compile Include="Src\Controls\UcCustomers.Designer.cs">
       <DependentUpon>UcCustomers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Src\Controls\UcDbError.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Src\Controls\UcDbError.Designer.cs">
+      <DependentUpon>UcDbError.cs</DependentUpon>
+    </Compile>
     <Compile Include="Src\Controls\UcHome.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -101,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Src\Controls\UcCustomers.resx">
       <DependentUpon>UcCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Src\Controls\UcDbError.resx">
+      <DependentUpon>UcDbError.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Src\Controls\UcHome.resx">
       <DependentUpon>UcHome.cs</DependentUpon>

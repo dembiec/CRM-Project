@@ -60,7 +60,7 @@ namespace CRM_Project.Src.Controls
                     tblCustomers.Controls.Add(lblNoData);
                 }
             } else {
-                MessageBox.Show("Wystąpił błąd bazy danych podczas wykonywania zapytania");
+                MessageBox.Show("Wystąpił błąd bazy danych podczas wykonywania zapytania"); 
             }
             Database.close();
         }
