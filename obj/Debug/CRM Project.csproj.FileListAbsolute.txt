@@ -20,3 +20,4 @@ C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\bin\Debug\MySql.Data.xml
 C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\obj\Debug\CRM Project.csproj.CopyComplete
 C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\obj\Debug\CRM_Project.Src.Controls.UcAddCustomer.resources
 C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\obj\Debug\CRM_Project.Src.Controls.UcDbError.resources
+C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\obj\Debug\CRM_Project.Src.Controls.UcDataNotFound.resources

@@ -25,6 +25,11 @@ namespace CRM_Project.Src.Controls
             UserControls.show(UcAC, contentPanel);
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            UcCustomers_Load(sender, e);
+        }
+
         private void btnSearch_Click(object sender, EventArgs e)
         {
             if (tbSearch.Text != "") {
@@ -51,7 +56,7 @@ namespace CRM_Project.Src.Controls
                         }
                         tblCustomers.DataSource = table;
                     } else {
-                        MessageBox.Show("Nie znaleziono");
+                        MessageBox.Show("Dane Nie Zostały Znalezione");
                     }
                 } else {
                     contentPanel.Dock = DockStyle.Fill;

@@ -71,6 +71,12 @@
     <Compile Include="Src\Controls\UcCustomers.Designer.cs">
       <DependentUpon>UcCustomers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Src\Controls\UcDataNotFound.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Src\Controls\UcDataNotFound.Designer.cs">
+      <DependentUpon>UcDataNotFound.cs</DependentUpon>
+    </Compile>
     <Compile Include="Src\Controls\UcDbError.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Src\Controls\UcCustomers.resx">
       <DependentUpon>UcCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Src\Controls\UcDataNotFound.resx">
+      <DependentUpon>UcDataNotFound.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Src\Controls\UcDbError.resx">
       <DependentUpon>UcDbError.cs</DependentUpon>
@@ -177,6 +186,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
