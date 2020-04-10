@@ -109,5 +109,10 @@ namespace CRM_Project.Src.Controls
             }
             Database.close();
         }
+
+        private void tblCustomers_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int id = int.Parse(tblCustomers.Rows[e.RowIndex].Cells[0].Value.ToString());
+        }
     }
 }
