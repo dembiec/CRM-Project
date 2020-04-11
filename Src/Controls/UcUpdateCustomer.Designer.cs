@@ -108,8 +108,10 @@
             this.tbDescription.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.tbDescription.ForeColor = System.Drawing.Color.Black;
             this.tbDescription.Location = new System.Drawing.Point(20, 250);
+            this.tbDescription.MaxLength = 300;
             this.tbDescription.Multiline = true;
             this.tbDescription.Name = "tbDescription";
+            this.tbDescription.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tbDescription.Size = new System.Drawing.Size(844, 162);
             this.tbDescription.TabIndex = 4;
             // 

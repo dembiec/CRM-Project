@@ -22,6 +22,7 @@ namespace CRM_Project.Src.Controls
         private void btnAddCustomer_Click(object sender, EventArgs e)
         {
             UcAddCustomer UcAC = new UcAddCustomer();
+            contentPanel.Dock = DockStyle.Fill;
             UserControls.show(UcAC, contentPanel);
         }
 
