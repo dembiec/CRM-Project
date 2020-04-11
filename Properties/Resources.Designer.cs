@@ -63,6 +63,16 @@ namespace CRM_Project.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _event {
+            get {
+                object obj = ResourceManager.GetObject("event", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btn_green {
             get {
                 object obj = ResourceManager.GetObject("btn-green", resourceCulture);
@@ -126,6 +136,16 @@ namespace CRM_Project.Properties {
         internal static System.Drawing.Bitmap customers_hover {
             get {
                 object obj = ResourceManager.GetObject("customers-hover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap event_hover {
+            get {
+                object obj = ResourceManager.GetObject("event-hover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -117,5 +117,21 @@ namespace CRM_Project
         {
             AppIcons.replace(btnCustomers, "customers");
         }
+
+        //btnEvent
+        private void btnEvent_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEvent_MouseHover(object sender, EventArgs e)
+        {
+            AppIcons.replace(btnEvent, "event-hover");
+        }
+
+        private void btnEvent_MouseLeave(object sender, EventArgs e)
+        {
+            AppIcons.replace(btnEvent, "event");
+        }
     }
 }
