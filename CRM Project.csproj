@@ -95,6 +95,12 @@
     <Compile Include="Src\Controls\UcNetwork.Designer.cs">
       <DependentUpon>UcNetwork.cs</DependentUpon>
     </Compile>
+    <Compile Include="Src\Controls\UcUpdateCustomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Src\Controls\UcUpdateCustomer.Designer.cs">
+      <DependentUpon>UcUpdateCustomer.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -125,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Src\Controls\UcNetwork.resx">
       <DependentUpon>UcNetwork.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Src\Controls\UcUpdateCustomer.resx">
+      <DependentUpon>UcUpdateCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
