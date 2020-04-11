@@ -22,3 +22,4 @@ C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\obj\Debug\CRM_Project.Src.Con
 C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\obj\Debug\CRM_Project.Src.Controls.UcDbError.resources
 C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\obj\Debug\CRM_Project.Src.Controls.UcDataNotFound.resources
 C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\obj\Debug\CRM_Project.Src.Controls.UcUpdateCustomer.resources
+C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\obj\Debug\CRM_Project.Src.Controls.UcEvent.resources

@@ -83,6 +83,12 @@
     <Compile Include="Src\Controls\UcDbError.Designer.cs">
       <DependentUpon>UcDbError.cs</DependentUpon>
     </Compile>
+    <Compile Include="Src\Controls\UcEvent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Src\Controls\UcEvent.Designer.cs">
+      <DependentUpon>UcEvent.cs</DependentUpon>
+    </Compile>
     <Compile Include="Src\Controls\UcHome.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -125,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Src\Controls\UcDbError.resx">
       <DependentUpon>UcDbError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Src\Controls\UcEvent.resx">
+      <DependentUpon>UcEvent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Src\Controls\UcHome.resx">
       <DependentUpon>UcHome.cs</DependentUpon>
@@ -204,6 +213,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\event-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnify.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
