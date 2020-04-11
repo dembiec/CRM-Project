@@ -121,7 +121,8 @@ namespace CRM_Project
         //btnEvent
         private void btnEvent_Click(object sender, EventArgs e)
         {
-
+            UcEvent UcE = new UcEvent();
+            UserControls.show(UcE, contentPanel);
         }
 
         private void btnEvent_MouseHover(object sender, EventArgs e)
