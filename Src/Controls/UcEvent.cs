@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CRM_Project.Src.Classes;
 
 namespace CRM_Project.Src.Controls
 {
@@ -15,6 +16,13 @@ namespace CRM_Project.Src.Controls
         public UcEvent()
         {
             InitializeComponent();
+        }
+
+        private void btnAddEvent_Click(object sender, EventArgs e)
+        {
+            UcAddEvent UcAE = new UcAddEvent();
+            contentPanel.Dock = DockStyle.Fill;
+            UserControls.show(UcAE, contentPanel);
         }
     }
 }

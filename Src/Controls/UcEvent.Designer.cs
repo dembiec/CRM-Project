@@ -57,6 +57,7 @@
             this.btnAddEvent.TabIndex = 1;
             this.btnAddEvent.Text = "Dodaj Wydarzenie";
             this.btnAddEvent.UseVisualStyleBackColor = false;
+            this.btnAddEvent.Click += new System.EventHandler(this.btnAddEvent_Click);
             // 
             // btnRefresh
             // 
@@ -105,11 +106,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(38)))), ((int)(((byte)(51)))));
+            this.Controls.Add(this.contentPanel);
+            this.Controls.Add(this.btnAddEvent);
+            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.tbSearch);
             this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.btnRefresh);
-            this.Controls.Add(this.btnAddEvent);
-            this.Controls.Add(this.contentPanel);
             this.Name = "UcEvent";
             this.Size = new System.Drawing.Size(884, 501);
             this.ResumeLayout(false);
