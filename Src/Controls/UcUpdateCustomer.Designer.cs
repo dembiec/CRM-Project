@@ -124,11 +124,11 @@
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(242)))), ((int)(((byte)(251)))));
-            this.btnUpdate.Location = new System.Drawing.Point(784, 440);
+            this.btnUpdate.Location = new System.Drawing.Point(769, 440);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(80, 35);
+            this.btnUpdate.Size = new System.Drawing.Size(95, 35);
             this.btnUpdate.TabIndex = 5;
-            this.btnUpdate.Text = "Popraw";
+            this.btnUpdate.Text = "Zaktualizuj";
             this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
