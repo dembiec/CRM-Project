@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.leftPanel = new System.Windows.Forms.Panel();
+            this.btnSettings = new System.Windows.Forms.Button();
             this.btnEvent = new System.Windows.Forms.Button();
             this.btnCustomers = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
@@ -46,6 +47,7 @@
             // leftPanel
             // 
             this.leftPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(28)))), ((int)(((byte)(40)))));
+            this.leftPanel.Controls.Add(this.btnSettings);
             this.leftPanel.Controls.Add(this.btnEvent);
             this.leftPanel.Controls.Add(this.btnCustomers);
             this.leftPanel.Controls.Add(this.btnHome);
@@ -57,6 +59,22 @@
             this.leftPanel.Size = new System.Drawing.Size(100, 561);
             this.leftPanel.TabIndex = 0;
             // 
+            // btnSettings
+            // 
+            this.btnSettings.FlatAppearance.BorderSize = 0;
+            this.btnSettings.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnSettings.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSettings.Image = global::CRM_Project.Properties.Resources.settings;
+            this.btnSettings.Location = new System.Drawing.Point(0, 300);
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Size = new System.Drawing.Size(100, 33);
+            this.btnSettings.TabIndex = 4;
+            this.btnSettings.UseVisualStyleBackColor = true;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
+            this.btnSettings.MouseLeave += new System.EventHandler(this.btnSettings_MouseLeave);
+            this.btnSettings.MouseHover += new System.EventHandler(this.btnSettings_MouseHover);
+            // 
             // btnEvent
             // 
             this.btnEvent.FlatAppearance.BorderSize = 0;
@@ -66,7 +84,7 @@
             this.btnEvent.Image = global::CRM_Project.Properties.Resources._event;
             this.btnEvent.Location = new System.Drawing.Point(0, 240);
             this.btnEvent.Name = "btnEvent";
-            this.btnEvent.Size = new System.Drawing.Size(100, 32);
+            this.btnEvent.Size = new System.Drawing.Size(100, 33);
             this.btnEvent.TabIndex = 3;
             this.btnEvent.UseVisualStyleBackColor = true;
             this.btnEvent.Click += new System.EventHandler(this.btnEvent_Click);
@@ -82,7 +100,7 @@
             this.btnCustomers.Image = global::CRM_Project.Properties.Resources.customers;
             this.btnCustomers.Location = new System.Drawing.Point(0, 180);
             this.btnCustomers.Name = "btnCustomers";
-            this.btnCustomers.Size = new System.Drawing.Size(100, 32);
+            this.btnCustomers.Size = new System.Drawing.Size(100, 33);
             this.btnCustomers.TabIndex = 2;
             this.btnCustomers.UseVisualStyleBackColor = true;
             this.btnCustomers.Click += new System.EventHandler(this.btnCustomers_Click);
@@ -98,7 +116,7 @@
             this.btnHome.Image = global::CRM_Project.Properties.Resources.home;
             this.btnHome.Location = new System.Drawing.Point(0, 120);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(100, 32);
+            this.btnHome.Size = new System.Drawing.Size(100, 33);
             this.btnHome.TabIndex = 1;
             this.btnHome.UseVisualStyleBackColor = true;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
@@ -221,6 +239,7 @@
         private System.Windows.Forms.Panel contentPanel;
         private System.Windows.Forms.Button btnCustomers;
         private System.Windows.Forms.Button btnEvent;
+        private System.Windows.Forms.Button btnSettings;
     }
 }
 

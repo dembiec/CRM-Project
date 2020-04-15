@@ -144,5 +144,21 @@ namespace CRM_Project
         {
             AppIcons.replace(btnEvent, "event");
         }
+
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            UcSettings UcS = new UcSettings();
+            UserControls.show(UcS, contentPanel);
+        }
+
+        private void btnSettings_MouseHover(object sender, EventArgs e)
+        {
+            AppIcons.replace(btnSettings, "settings-hover");
+        }
+
+        private void btnSettings_MouseLeave(object sender, EventArgs e)
+        {
+            AppIcons.replace(btnSettings, "settings");
+        }
     }
 }
