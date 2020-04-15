@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -17,7 +18,16 @@ namespace CRM_Project
         //MainForm
         public MainForm()
         {
+            Thread splashScreen = new Thread(new ThreadStart(StartForm));
+            splashScreen.Start();
+            Thread.Sleep(3000);
             InitializeComponent();
+            splashScreen.Abort();
+        }
+
+        public void StartForm()
+        {
+            Application.Run(new FormSplash());
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -32,7 +42,7 @@ namespace CRM_Project
                 leftPanel.Enabled = false;
                 UcNetwork UcN = new UcNetwork();
                 UserControls.show(UcN, contentPanel);
-            }
+            }            
         }
 
         //topPanel

@@ -30,15 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.leftPanel = new System.Windows.Forms.Panel();
-            this.topPanel = new System.Windows.Forms.Panel();
-            this.lblAppName = new System.Windows.Forms.Label();
-            this.contentPanel = new System.Windows.Forms.Panel();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.btnMinimize = new System.Windows.Forms.Button();
             this.btnEvent = new System.Windows.Forms.Button();
             this.btnCustomers = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.btnGithub = new System.Windows.Forms.Button();
+            this.topPanel = new System.Windows.Forms.Panel();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnMinimize = new System.Windows.Forms.Button();
+            this.lblAppName = new System.Windows.Forms.Label();
+            this.contentPanel = new System.Windows.Forms.Panel();
             this.leftPanel.SuspendLayout();
             this.topPanel.SuspendLayout();
             this.SuspendLayout();
@@ -56,73 +56,6 @@
             this.leftPanel.Name = "leftPanel";
             this.leftPanel.Size = new System.Drawing.Size(100, 561);
             this.leftPanel.TabIndex = 0;
-            // 
-            // topPanel
-            // 
-            this.topPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(38)))), ((int)(((byte)(51)))));
-            this.topPanel.Controls.Add(this.btnClose);
-            this.topPanel.Controls.Add(this.btnMinimize);
-            this.topPanel.Controls.Add(this.lblAppName);
-            this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.topPanel.Location = new System.Drawing.Point(100, 0);
-            this.topPanel.Name = "topPanel";
-            this.topPanel.Size = new System.Drawing.Size(884, 60);
-            this.topPanel.TabIndex = 1;
-            this.topPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.topPanel_MouseDown);
-            this.topPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.topPanel_MouseMove);
-            // 
-            // lblAppName
-            // 
-            this.lblAppName.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblAppName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(242)))), ((int)(((byte)(251)))));
-            this.lblAppName.Location = new System.Drawing.Point(17, 0);
-            this.lblAppName.Margin = new System.Windows.Forms.Padding(0);
-            this.lblAppName.Name = "lblAppName";
-            this.lblAppName.Size = new System.Drawing.Size(117, 60);
-            this.lblAppName.TabIndex = 0;
-            this.lblAppName.Text = "CRM Project";
-            this.lblAppName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // contentPanel
-            // 
-            this.contentPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(38)))), ((int)(((byte)(51)))));
-            this.contentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.contentPanel.Location = new System.Drawing.Point(100, 60);
-            this.contentPanel.Name = "contentPanel";
-            this.contentPanel.Size = new System.Drawing.Size(884, 501);
-            this.contentPanel.TabIndex = 2;
-            // 
-            // btnClose
-            // 
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Image = global::CRM_Project.Properties.Resources.close;
-            this.btnClose.Location = new System.Drawing.Point(848, 0);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(16, 60);
-            this.btnClose.TabIndex = 2;
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            this.btnClose.MouseLeave += new System.EventHandler(this.btnClose_MouseLeave);
-            this.btnClose.MouseHover += new System.EventHandler(this.btnClose_MouseHover);
-            // 
-            // btnMinimize
-            // 
-            this.btnMinimize.FlatAppearance.BorderSize = 0;
-            this.btnMinimize.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnMinimize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinimize.Image = global::CRM_Project.Properties.Resources.minimize;
-            this.btnMinimize.Location = new System.Drawing.Point(808, 0);
-            this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(16, 60);
-            this.btnMinimize.TabIndex = 1;
-            this.btnMinimize.UseVisualStyleBackColor = true;
-            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
-            this.btnMinimize.MouseLeave += new System.EventHandler(this.btnMinimize_MouseLeave);
-            this.btnMinimize.MouseHover += new System.EventHandler(this.btnMinimize_MouseHover);
             // 
             // btnEvent
             // 
@@ -185,6 +118,73 @@
             this.btnGithub.Size = new System.Drawing.Size(100, 45);
             this.btnGithub.TabIndex = 0;
             this.btnGithub.UseVisualStyleBackColor = true;
+            // 
+            // topPanel
+            // 
+            this.topPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(38)))), ((int)(((byte)(51)))));
+            this.topPanel.Controls.Add(this.btnClose);
+            this.topPanel.Controls.Add(this.btnMinimize);
+            this.topPanel.Controls.Add(this.lblAppName);
+            this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.topPanel.Location = new System.Drawing.Point(100, 0);
+            this.topPanel.Name = "topPanel";
+            this.topPanel.Size = new System.Drawing.Size(884, 60);
+            this.topPanel.TabIndex = 1;
+            this.topPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.topPanel_MouseDown);
+            this.topPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.topPanel_MouseMove);
+            // 
+            // btnClose
+            // 
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Image = global::CRM_Project.Properties.Resources.close;
+            this.btnClose.Location = new System.Drawing.Point(848, 0);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(16, 60);
+            this.btnClose.TabIndex = 2;
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            this.btnClose.MouseLeave += new System.EventHandler(this.btnClose_MouseLeave);
+            this.btnClose.MouseHover += new System.EventHandler(this.btnClose_MouseHover);
+            // 
+            // btnMinimize
+            // 
+            this.btnMinimize.FlatAppearance.BorderSize = 0;
+            this.btnMinimize.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnMinimize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimize.Image = global::CRM_Project.Properties.Resources.minimize;
+            this.btnMinimize.Location = new System.Drawing.Point(808, 0);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(16, 60);
+            this.btnMinimize.TabIndex = 1;
+            this.btnMinimize.UseVisualStyleBackColor = true;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
+            this.btnMinimize.MouseLeave += new System.EventHandler(this.btnMinimize_MouseLeave);
+            this.btnMinimize.MouseHover += new System.EventHandler(this.btnMinimize_MouseHover);
+            // 
+            // lblAppName
+            // 
+            this.lblAppName.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblAppName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(242)))), ((int)(((byte)(251)))));
+            this.lblAppName.Location = new System.Drawing.Point(17, 0);
+            this.lblAppName.Margin = new System.Windows.Forms.Padding(0);
+            this.lblAppName.Name = "lblAppName";
+            this.lblAppName.Size = new System.Drawing.Size(117, 60);
+            this.lblAppName.TabIndex = 0;
+            this.lblAppName.Text = "CRM Project";
+            this.lblAppName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // contentPanel
+            // 
+            this.contentPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(38)))), ((int)(((byte)(51)))));
+            this.contentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.contentPanel.Location = new System.Drawing.Point(100, 60);
+            this.contentPanel.Name = "contentPanel";
+            this.contentPanel.Size = new System.Drawing.Size(884, 501);
+            this.contentPanel.TabIndex = 2;
             // 
             // MainForm
             // 
