@@ -32,13 +32,16 @@ namespace CRM_Project
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            if (Network.status())
-            {
-                UcHome UcH = new UcHome();
-                UserControls.show(UcH, contentPanel);
-            }
-            else
-            {
+            if (Network.status()) {
+                if (Properties.Settings.Default.firstStart) {
+                    UcHome UcH = new UcHome();
+                    UserControls.show(UcH, contentPanel);
+                } else {
+                    leftPanel.Enabled = false;
+                    //Properties.Settings.Default.firstStart = true;
+                    //Properties.Settings.Default.Save();
+                }
+            } else {
                 leftPanel.Enabled = false;
                 UcNetwork UcN = new UcNetwork();
                 UserControls.show(UcN, contentPanel);
