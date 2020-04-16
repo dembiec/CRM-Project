@@ -32,8 +32,8 @@ namespace CRM_Project.Src.Controls
 
         private void btnAccess_Click(object sender, EventArgs e)
         {
-            //UcSettingsAccess UcSA = new UcSettingsAccess();
-            //UserControls.show(UcSA, contentPanel);
+            UcSettingsAccess UcSA = new UcSettingsAccess();
+            UserControls.show(UcSA, contentPanel);
         }
     }
 }

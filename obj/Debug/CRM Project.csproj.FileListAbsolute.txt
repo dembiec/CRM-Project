@@ -28,3 +28,4 @@ C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\obj\Debug\CRM_Project.Src.Con
 C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\obj\Debug\CRM_Project.FormSplash.resources
 C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\obj\Debug\CRM_Project.Src.Controls.UcSettings.resources
 C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\obj\Debug\CRM_Project.Src.Controls.UcSettingsDatabase.resources
+C:\Users\rembik\Desktop\C#\CRM Project\CRM Project\obj\Debug\CRM_Project.Src.Controls.UcSettingsAccess.resources

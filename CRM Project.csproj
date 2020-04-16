@@ -126,6 +126,12 @@
     <Compile Include="Src\Controls\UcSettings.Designer.cs">
       <DependentUpon>UcSettings.cs</DependentUpon>
     </Compile>
+    <Compile Include="Src\Controls\UcSettingsAccess.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Src\Controls\UcSettingsAccess.Designer.cs">
+      <DependentUpon>UcSettingsAccess.cs</DependentUpon>
+    </Compile>
     <Compile Include="Src\Controls\UcSettingsDatabase.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -186,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Src\Controls\UcSettings.resx">
       <DependentUpon>UcSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Src\Controls\UcSettingsAccess.resx">
+      <DependentUpon>UcSettingsAccess.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Src\Controls\UcSettingsDatabase.resx">
       <DependentUpon>UcSettingsDatabase.cs</DependentUpon>
