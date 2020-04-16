@@ -9,6 +9,8 @@ namespace CRM_Project.Src.Classes
 {
     class UserControls
     {
+        public static Control[] elements = new Control[2];
+
         public static void show(Control control, Control content)
         {
             content.Controls.Clear();

@@ -34,8 +34,18 @@ namespace CRM_Project
         {
             if (Network.status()) {
                 if (Properties.Settings.Default.firstStart) {
-                    UcHome UcH = new UcHome();
-                    UserControls.show(UcH, contentPanel);
+                    if (Properties.Settings.Default.accessLock != string.Empty) {
+                        leftPanel.Enabled = false;
+
+                        UserControls.elements[0] = leftPanel;
+                        UserControls.elements[1] = contentPanel;
+
+                        UcAccess UcA = new UcAccess();
+                        UserControls.show(UcA, contentPanel);
+                    } else {
+                        UcHome UcH = new UcHome();
+                        UserControls.show(UcH, contentPanel);
+                    }
                 } else {
                     leftPanel.Enabled = false;
 
@@ -46,7 +56,7 @@ namespace CRM_Project
                 leftPanel.Enabled = false;
                 UcNetwork UcN = new UcNetwork();
                 UserControls.show(UcN, contentPanel);
-            }            
+            }
         }
 
         //topPanel

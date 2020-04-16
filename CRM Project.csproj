@@ -67,11 +67,18 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>SettingsDatabase.settings</DependentUpon>
     </Compile>
+    <Compile Include="Src\Classes\Access.cs" />
     <Compile Include="Src\Classes\AppIcons.cs" />
     <Compile Include="Src\Classes\Customers.cs" />
     <Compile Include="Src\Classes\Database.cs" />
     <Compile Include="Src\Classes\Network.cs" />
     <Compile Include="Src\Classes\UserControls.cs" />
+    <Compile Include="Src\Controls\UcAccess.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Src\Controls\UcAccess.Designer.cs">
+      <DependentUpon>UcAccess.cs</DependentUpon>
+    </Compile>
     <Compile Include="Src\Controls\UcAddCustomer.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -166,6 +173,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Src\Controls\UcAccess.resx">
+      <DependentUpon>UcAccess.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Src\Controls\UcAddCustomer.resx">
       <DependentUpon>UcAddCustomer.cs</DependentUpon>
     </EmbeddedResource>
