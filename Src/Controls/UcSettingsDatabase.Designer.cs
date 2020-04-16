@@ -165,6 +165,7 @@
             this.Controls.Add(this.lblHost);
             this.Name = "UcSettingsDatabase";
             this.Size = new System.Drawing.Size(884, 450);
+            this.Load += new System.EventHandler(this.UcSettingsDatabase_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

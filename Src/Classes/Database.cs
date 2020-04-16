@@ -16,10 +16,15 @@ namespace CRM_Project.Src.Classes
 
         public static void connect()
         {
-            string host = "localhost";
+            /*string host = "localhost";
             string user = "root";
             string password = "";
-            string db = "crm-project";
+            string db = "crm-project";*/
+
+            string host = Properties.SettingsDatabase.Default.Host;
+            string user = Properties.SettingsDatabase.Default.User;
+            string password = Properties.SettingsDatabase.Default.Password;
+            string db = Properties.SettingsDatabase.Default.Database;
 
             string connectionData = "datasource=" + host + ";port=3306;username=" + user + ";password=" + password + ";database=" + db + ";";
             databaseConnection = new MySqlConnection(connectionData);
