@@ -34,5 +34,17 @@ namespace CRM_Project.Properties {
                 this["firstStart"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string accessLock {
+            get {
+                return ((string)(this["accessLock"]));
+            }
+            set {
+                this["accessLock"] = value;
+            }
+        }
     }
 }
