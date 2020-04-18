@@ -33,6 +33,9 @@ namespace CRM_Project
         private void MainForm_Load(object sender, EventArgs e)
         {
             if (Network.status()) {
+                AppIcons.activeMenuItem = btnHome;
+                AppIcons.replace(btnHome, "home-hover");
+
                 if (Properties.Settings.Default.firstStart) {
                     if (Properties.Settings.Default.accessLock != string.Empty) {
                         leftPanel.Enabled = false;
@@ -43,10 +46,8 @@ namespace CRM_Project
                         UcAccess UcA = new UcAccess();
                         UserControls.show(UcA, contentPanel);
                     } else {
-                        AppIcons.activeMenuItem = btnHome;
                         UcHome UcH = new UcHome();
                         UserControls.show(UcH, contentPanel);
-                        AppIcons.replace(btnHome, "home-hover");
                     }
                 } else {
                     leftPanel.Enabled = false;
