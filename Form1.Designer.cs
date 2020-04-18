@@ -72,8 +72,9 @@
             this.btnSettings.TabIndex = 4;
             this.btnSettings.UseVisualStyleBackColor = true;
             this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
-            this.btnSettings.MouseLeave += new System.EventHandler(this.btnSettings_MouseLeave);
-            this.btnSettings.MouseHover += new System.EventHandler(this.btnSettings_MouseHover);
+            this.btnSettings.Click += new System.EventHandler(this.btnMenu_Click);
+            this.btnSettings.MouseLeave += new System.EventHandler(this.btnMenu_MouseLeave);
+            this.btnSettings.MouseHover += new System.EventHandler(this.btnMenu_MouseHover);
             // 
             // btnEvent
             // 
@@ -88,8 +89,9 @@
             this.btnEvent.TabIndex = 3;
             this.btnEvent.UseVisualStyleBackColor = true;
             this.btnEvent.Click += new System.EventHandler(this.btnEvent_Click);
-            this.btnEvent.MouseLeave += new System.EventHandler(this.btnEvent_MouseLeave);
-            this.btnEvent.MouseHover += new System.EventHandler(this.btnEvent_MouseHover);
+            this.btnEvent.Click += new System.EventHandler(this.btnMenu_Click);
+            this.btnEvent.MouseLeave += new System.EventHandler(this.btnMenu_MouseLeave);
+            this.btnEvent.MouseHover += new System.EventHandler(this.btnMenu_MouseHover);
             // 
             // btnCustomers
             // 
@@ -104,8 +106,9 @@
             this.btnCustomers.TabIndex = 2;
             this.btnCustomers.UseVisualStyleBackColor = true;
             this.btnCustomers.Click += new System.EventHandler(this.btnCustomers_Click);
-            this.btnCustomers.MouseLeave += new System.EventHandler(this.btnCustomers_MouseLeave);
-            this.btnCustomers.MouseHover += new System.EventHandler(this.btnCustomers_MouseHover);
+            this.btnCustomers.Click += new System.EventHandler(this.btnMenu_Click);
+            this.btnCustomers.MouseLeave += new System.EventHandler(this.btnMenu_MouseLeave);
+            this.btnCustomers.MouseHover += new System.EventHandler(this.btnMenu_MouseHover);
             // 
             // btnHome
             // 
@@ -120,8 +123,9 @@
             this.btnHome.TabIndex = 1;
             this.btnHome.UseVisualStyleBackColor = true;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            this.btnHome.MouseLeave += new System.EventHandler(this.btnHome_MouseLeave);
-            this.btnHome.MouseHover += new System.EventHandler(this.btnHome_MouseHover);
+            this.btnHome.Click += new System.EventHandler(this.btnMenu_Click);
+            this.btnHome.MouseLeave += new System.EventHandler(this.btnMenu_MouseLeave);
+            this.btnHome.MouseHover += new System.EventHandler(this.btnMenu_MouseHover);
             // 
             // btnGithub
             // 

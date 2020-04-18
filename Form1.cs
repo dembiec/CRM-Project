@@ -43,8 +43,10 @@ namespace CRM_Project
                         UcAccess UcA = new UcAccess();
                         UserControls.show(UcA, contentPanel);
                     } else {
+                        AppIcons.activeMenuItem = btnHome;
                         UcHome UcH = new UcHome();
                         UserControls.show(UcH, contentPanel);
+                        AppIcons.replace(btnHome, "home-hover");
                     }
                 } else {
                     leftPanel.Enabled = false;
@@ -69,8 +71,7 @@ namespace CRM_Project
 
         private void topPanel_MouseMove(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
-            {
+            if (e.Button == MouseButtons.Left) {
                 this.Left += e.X - lastPoint.X;
                 this.Top += e.Y - lastPoint.Y;
             }
@@ -115,31 +116,11 @@ namespace CRM_Project
             UserControls.show(UcH, contentPanel);
         }
 
-        private void btnHome_MouseHover(object sender, EventArgs e)
-        {
-            AppIcons.replace(btnHome, "home-hover");
-        }
-
-        private void btnHome_MouseLeave(object sender, EventArgs e)
-        {
-            AppIcons.replace(btnHome, "home");
-        }
-
         //btnCustomers
         private void btnCustomers_Click(object sender, EventArgs e)
         {
             UcCustomers UcC = new UcCustomers();
             UserControls.show(UcC, contentPanel);
-        }
-
-        private void btnCustomers_MouseHover(object sender, EventArgs e)
-        {
-            AppIcons.replace(btnCustomers, "customers-hover");
-        }
-
-        private void btnCustomers_MouseLeave(object sender, EventArgs e)
-        {
-            AppIcons.replace(btnCustomers, "customers");
         }
 
         //btnEvent
@@ -149,30 +130,41 @@ namespace CRM_Project
             UserControls.show(UcE, contentPanel);
         }
 
-        private void btnEvent_MouseHover(object sender, EventArgs e)
-        {
-            AppIcons.replace(btnEvent, "event-hover");
-        }
-
-        private void btnEvent_MouseLeave(object sender, EventArgs e)
-        {
-            AppIcons.replace(btnEvent, "event");
-        }
-
+        //btnSettings
         private void btnSettings_Click(object sender, EventArgs e)
         {
             UcSettings UcS = new UcSettings();
             UserControls.show(UcS, contentPanel);
         }
 
-        private void btnSettings_MouseHover(object sender, EventArgs e)
+        //btnMenu
+        private void btnMenu_Click(object sender, EventArgs e)
         {
-            AppIcons.replace(btnSettings, "settings-hover");
+            Button btn = (Button)sender;
+            string btnName = btn.Name.Remove(0, 3).ToLower();
+            string activeButton = AppIcons.activeMenuItem.Name.Remove(0, 3).ToLower();
+
+            AppIcons.replace(AppIcons.activeMenuItem, activeButton);
+            AppIcons.activeMenuItem = btn;
+            AppIcons.replace(btn, btnName+"-hover");
         }
 
-        private void btnSettings_MouseLeave(object sender, EventArgs e)
+        private void btnMenu_MouseHover(object sender, EventArgs e)
         {
-            AppIcons.replace(btnSettings, "settings");
+            Button btn = (Button)sender;
+            string btnName = btn.Name.Remove(0, 3).ToLower();
+            AppIcons.replace(btn, btnName+"-hover");
+        }
+
+        private void btnMenu_MouseLeave(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            string activeElement = AppIcons.activeMenuItem.Name.Remove(0, 3).ToLower();
+            string btnName = btn.Name.Remove(0, 3).ToLower();
+
+            if (btnName != activeElement) {
+                AppIcons.replace(btn, btnName);
+            }
         }
     }
 }

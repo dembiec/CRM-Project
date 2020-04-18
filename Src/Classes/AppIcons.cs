@@ -10,6 +10,7 @@ namespace CRM_Project.Src.Classes
 {
     class AppIcons
     {
+        public static Button activeMenuItem { get; set; }
         public static void replace(Button button, string iconName)
         {
             Object rm = Properties.Resources.ResourceManager.GetObject(iconName);

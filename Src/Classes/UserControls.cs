@@ -9,7 +9,9 @@ namespace CRM_Project.Src.Classes
 {
     class UserControls
     {
-        public static Control[] elements = new Control[2];
+        public static Control[] elements = new Control[3];
+
+        public static string previousTab { get; set; }
 
         public static void show(Control control, Control content)
         {
