@@ -181,7 +181,7 @@ namespace CRM_Project.Src.Controls
                 Database.query(dbQuery);
                 if (Database.status) {
                     UcUpdateEvent_Load(sender, e);
-                    MessageBox.Show("Poprawnie zaktualizowano dane klienta w bazie danych");
+                    MessageBox.Show("Poprawnie zaktualizowano dane wydarzenia w bazie danych");
                 } else {
                     MessageBox.Show("Wystąpił błąd bazy danych. Spróbuj ponownie za chwilę");
                 }
