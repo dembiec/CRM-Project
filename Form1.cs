@@ -32,6 +32,8 @@ namespace CRM_Project
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            this.Activate();
+
             if (Network.status()) {
                 AppIcons.activeMenuItem = btnHome;
                 AppIcons.replace(btnHome, "home-hover");
