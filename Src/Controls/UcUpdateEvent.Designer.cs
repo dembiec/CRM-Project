@@ -158,7 +158,6 @@
             this.cbCustomer.Name = "cbCustomer";
             this.cbCustomer.Size = new System.Drawing.Size(400, 34);
             this.cbCustomer.TabIndex = 9;
-            this.cbCustomer.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cbCustomer_MouseClick);
             this.cbCustomer.Validated += new System.EventHandler(this.cbCustomer_Validated);
             // 
             // pbCustomer

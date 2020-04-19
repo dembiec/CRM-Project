@@ -112,10 +112,6 @@ namespace CRM_Project.Src.Controls
         }
 
         //customer
-        private void cbCustomer_MouseClick(object sender, MouseEventArgs e)
-        {
-            cbCustomer.DroppedDown = true;
-        }
 
         bool customer = true;
         private void cbCustomer_Validated(object sender, EventArgs e)
