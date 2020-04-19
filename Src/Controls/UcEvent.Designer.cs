@@ -91,12 +91,14 @@
             this.tblEvents.Name = "tblEvents";
             this.tblEvents.ReadOnly = true;
             this.tblEvents.RowHeadersVisible = false;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(46)))), ((int)(((byte)(60)))));
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Calibri", 14.25F);
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(242)))), ((int)(((byte)(251)))));
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(46)))), ((int)(((byte)(60)))));
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(242)))), ((int)(((byte)(251)))));
             this.tblEvents.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.tblEvents.RowTemplate.Height = 30;
             this.tblEvents.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.tblEvents.Size = new System.Drawing.Size(844, 410);
             this.tblEvents.TabIndex = 0;
