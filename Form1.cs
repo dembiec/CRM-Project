@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -110,6 +111,12 @@ namespace CRM_Project
         private void btnClose_MouseLeave(object sender, EventArgs e)
         {
             AppIcons.replace(btnClose, "close");
+        }
+
+        //btnGithub
+        private void btnGithub_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://github.com/dembiec/CRM-Project");
         }
 
         //btnHome

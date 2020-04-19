@@ -140,6 +140,7 @@
             this.btnGithub.Size = new System.Drawing.Size(100, 45);
             this.btnGithub.TabIndex = 0;
             this.btnGithub.UseVisualStyleBackColor = true;
+            this.btnGithub.Click += new System.EventHandler(this.btnGithub_Click);
             // 
             // topPanel
             // 
