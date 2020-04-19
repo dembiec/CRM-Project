@@ -54,9 +54,9 @@
             this.tbAccessPin.Location = new System.Drawing.Point(20, 225);
             this.tbAccessPin.MaxLength = 16;
             this.tbAccessPin.Name = "tbAccessPin";
-            this.tbAccessPin.PasswordChar = '*';
             this.tbAccessPin.Size = new System.Drawing.Size(300, 33);
             this.tbAccessPin.TabIndex = 1;
+            this.tbAccessPin.UseSystemPasswordChar = true;
             this.tbAccessPin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbAccessPin_KeyPress);
             // 
             // cbAccesLock
