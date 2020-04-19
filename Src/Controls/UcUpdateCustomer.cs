@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CRM_Project.Src.Classes;
 using System.Net.Mail;
+using System.Text.RegularExpressions;
 
 namespace CRM_Project.Src.Controls
 {
@@ -146,14 +147,16 @@ namespace CRM_Project.Src.Controls
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             if (name && email && telephone && adress) {
+                string outAdress = Regex.Replace(tbAdress.Text, @"('|=|-{2})", string.Empty);
+                string outEmail = Regex.Replace(tbEmail.Text, @"('|=|-{2})", string.Empty);
                 string dbQuery;
                 string description;
                 if (tbDescription.Text == "") {
                     description = string.Empty;
                 } else {
-                    description = tbDescription.Text;
+                    description = Regex.Replace(tbDescription.Text, @"('|=|-{2})", string.Empty); ;
                 }
-                dbQuery = "UPDATE `customers` SET `name` = '" + tbName.Text + "', `email` = '" + tbEmail.Text + "', `telephone` = '" + tbTelephone.Text + "', `address` = '" + tbAdress.Text + "', `description` = '" + description + "' WHERE `customers`.`id` = " + idCustomer;
+                dbQuery = "UPDATE `customers` SET `name` = '" + tbName.Text + "', `email` = '" + outEmail + "', `telephone` = '" + tbTelephone.Text + "', `address` = '" + outAdress + "', `description` = '" + description + "' WHERE `customers`.`id` = " + idCustomer;
 
                 Database.connect();
                 Database.query(dbQuery);

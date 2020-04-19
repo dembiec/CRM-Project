@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CRM_Project.Src.Classes;
 using System.Globalization;
+using System.Text.RegularExpressions;
 
 namespace CRM_Project.Src.Controls
 {
@@ -114,13 +115,15 @@ namespace CRM_Project.Src.Controls
         private void btnAdd_Click(object sender, EventArgs e)
         {
             if (title && date && customer) {
+                string outTitle = Regex.Replace(tbTitle.Text, @"('|=|-{2})", string.Empty);
                 string dbQuery;
                 Customers customer = cbCustomer.SelectedItem as Customers;
                 string dateFormat = Convert.ToDateTime(dateTimePicker.Text).ToString("yyyy-MM-dd HH:mm:ss");
                 if (tbDescription.Text == "") {
-                    dbQuery = "INSERT INTO `events` (`id`, `customer_id`, `title`, `description`, `status`, `date`, `update_date`) VALUES (NULL, '"+customer.ID+ "', '"+tbTitle.Text+"', NULL, '1', '"+dateFormat+"', current_timestamp())";
+                    dbQuery = "INSERT INTO `events` (`id`, `customer_id`, `title`, `description`, `status`, `date`, `update_date`) VALUES (NULL, '"+customer.ID+ "', '"+outTitle+"', NULL, '1', '"+dateFormat+"', current_timestamp())";
                 } else {
-                    dbQuery = "INSERT INTO `events` (`id`, `customer_id`, `title`, `description`, `status`, `date`, `update_date`) VALUES (NULL, '"+customer.ID+"', '"+tbTitle.Text+"', '"+tbDescription.Text+"', '1', '"+dateFormat+"', current_timestamp())";
+                    string outDescription = Regex.Replace(tbDescription.Text, @"('|=|-{2})", string.Empty);
+                    dbQuery = "INSERT INTO `events` (`id`, `customer_id`, `title`, `description`, `status`, `date`, `update_date`) VALUES (NULL, '"+customer.ID+"', '"+outTitle+"', '"+outDescription+"', '1', '"+dateFormat+"', current_timestamp())";
                 }
 
                 Database.connect();

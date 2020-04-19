@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CRM_Project.Src.Classes;
 using System.Net.Mail;
+using System.Text.RegularExpressions;
 
 namespace CRM_Project.Src.Controls
 {
@@ -112,11 +113,14 @@ namespace CRM_Project.Src.Controls
         private void btnInsert_Click(object sender, EventArgs e)
         {
             if (name && email && telephone && adress) {
+                string outAdress = Regex.Replace(tbAdress.Text, @"('|=|-{2})", string.Empty);
+                string outEmail = Regex.Replace(tbEmail.Text, @"('|=|-{2})", string.Empty);
                 string dbQuery;
                 if (tbDescription.Text == "") {
-                    dbQuery = "INSERT INTO `customers` (`id`, `name`, `email`, `telephone`, `address`, `description`) VALUES (NULL, '" + tbName.Text + "', '" + tbEmail.Text + "', '" + tbTelephone.Text + "', '" + tbAdress.Text + "', NULL)";
+                    dbQuery = "INSERT INTO `customers` (`id`, `name`, `email`, `telephone`, `address`, `description`) VALUES (NULL, '" + tbName.Text + "', '" + outEmail + "', '" + tbTelephone.Text + "', '" + outAdress + "', NULL)";
                 } else {
-                    dbQuery = "INSERT INTO `customers` (`id`, `name`, `email`, `telephone`, `address`, `description`) VALUES (NULL, '" + tbName.Text + "', '" + tbEmail.Text + "', '" + tbTelephone.Text + "', '" + tbAdress.Text + "', '" + tbDescription.Text + "')";
+                    string outDescription = Regex.Replace(tbDescription.Text, @"('|=|-{2})", string.Empty);
+                    dbQuery = "INSERT INTO `customers` (`id`, `name`, `email`, `telephone`, `address`, `description`) VALUES (NULL, '" + tbName.Text + "', '" + outEmail + "', '" + tbTelephone.Text + "', '" + outAdress + "', '" + outDescription + "')";
                 }
 
                 Database.connect();
