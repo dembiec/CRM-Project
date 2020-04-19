@@ -38,12 +38,12 @@ namespace CRM_Project
                 AppIcons.activeMenuItem = btnHome;
                 AppIcons.replace(btnHome, "home-hover");
 
+                UserControls.elements[0] = leftPanel;
+                UserControls.elements[1] = contentPanel;
+
                 if (Properties.Settings.Default.firstStart) {
                     if (Properties.Settings.Default.accessLock != string.Empty) {
                         leftPanel.Enabled = false;
-
-                        UserControls.elements[0] = leftPanel;
-                        UserControls.elements[1] = contentPanel;
 
                         UcAccess UcA = new UcAccess();
                         UserControls.show(UcA, contentPanel);
